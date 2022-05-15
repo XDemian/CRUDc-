@@ -1,0 +1,73 @@
+﻿
+
+@model DemianCRUD.Models.Pessoa;
+@{
+    ViewData["Title"] = "Insira Uma Pessoa";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+
+@*<form action="InsertPessoa" method="Post">
+        <label for="Nome">Nome</label><br />
+        <input placeholder="Escreva um nome" type="text" id="Nome" name="PrimeiroNome"><br /><br />
+
+        <label for="Idade">Idade</label><br />
+        <input placeholder="Escreva sua Idade" type="text" id="Idade" name="idade"><br /><br />
+
+        <label for="Email">E-mail</label><br />
+        <input placeholder="Escreva o e-mail" type="text" id="Email" name="e-mail"><br /><br />
+
+        <label for="Endereco">Endereco</label><br />
+        <input placeholder="Escreva seu endereço" type="text" id="Endereco" name="endereco"><br /><br />
+        <input type="submit">
+
+    </form>*@
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.nome)
+    @Html.EditorFor(model => model.nome)
+    <br />
+    @Html.LabelFor(model => model.idade)
+    @Html.EditorFor(model => model.idade)
+    <br />
+    @Html.LabelFor(model => model.email)
+    @Html.EditorFor(model => model.email)
+    <br />
+
+    @Html.LabelFor(model => model.endereco)
+    @Html.EditorFor(model => model.endereco)
+    <br />
+
+    <input type="submit" value="Inserir">
+
+}
+
+
+
+@*@Html.TextBox("Aqui Vai meu Texto!")
+    <br />
+    <br />
+
+
+    @Html.Label("E-mail:")
+    <br />
+    @Html.TextBox("Aqui Vai meu Texto!")
+    <br />
+    <br />
+
+    @Html.Label("Idade:")
+    <br />
+    @Html.TextBox("Aqui Vai meu Texto!")
+    <br />
+    <br />
+
+    @Html.Label("Endereço:")
+    <br />
+    @Html.TextBox("Aqui Vai meu Texto!")
+    <br />
+    <br />*@
+
+

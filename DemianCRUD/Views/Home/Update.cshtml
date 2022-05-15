@@ -1,0 +1,35 @@
+﻿
+
+@model DemianCRUD.Models.Pessoa;
+@{
+    ViewData["Title"] = "Editar Uma Pessoa";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Preencha os campos.</p>
+
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.id)
+    @Html.LabelFor(model => model.nome)
+    @Html.EditorFor(model => model.nome)
+    <br />
+    @Html.LabelFor(model => model.idade)
+    @Html.EditorFor(model => model.idade)
+    <br />
+    @Html.LabelFor(model => model.email)
+    @Html.EditorFor(model => model.email)
+    <br />
+
+    @Html.LabelFor(model => model.endereco)
+    @Html.EditorFor(model => model.endereco)
+    <br />
+
+    <input type="submit" value="Inserir">
+
+    <input type="submit"  value="Deletar" asp-area="" asp-controller="Home" asp-action="Delete"> 
+
+}
+
+

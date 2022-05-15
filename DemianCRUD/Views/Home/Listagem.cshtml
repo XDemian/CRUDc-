@@ -1,0 +1,23 @@
+﻿
+
+@model IEnumerable<DemianCRUD.Models.Pessoa>;
+@{
+    ViewData["Title"] = "Listagem";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@foreach (var items in Model)
+{
+ 
+
+
+    <h3>Lista com os Nomes </h3>
+    @items.nome<br/>
+    @items.email<br/>
+    @items.idade<br/>
+    @items.endereco<br/>
+    @Html.Hidden("id",items.id)<br/>
+    <input type="submit" value="Editar">
+
+}

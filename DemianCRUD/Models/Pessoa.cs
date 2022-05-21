@@ -12,12 +12,12 @@ namespace DemianCRUD.Models
     {
         public Pessoa() {
             
-            var listLinguaEstrangeira = new List<string>();
-            listLinguaEstrangeira.Add("Inglês");
-            listLinguaEstrangeira.Add("Espanhol");
-            listLinguaEstrangeira.Add("Francês");
-            SelectList _select = new SelectList(listLinguaEstrangeira);
-            this.listLinguaEstrangeira = _select;
+            //var listLinguaEstrangeira = new List<string>();
+            //listLinguaEstrangeira.Add("Inglês");
+            //listLinguaEstrangeira.Add("Espanhol");
+            //listLinguaEstrangeira.Add("Francês");
+            //SelectList _select = new SelectList(listLinguaEstrangeira);
+            //this.listLinguaEstrangeira = _select;
 
 
         }
@@ -32,8 +32,8 @@ namespace DemianCRUD.Models
 
         public string categoria { get; set; } // Texto livre. Só mostrar este campo se o campo Habilitação for marcado como Sim.
 
-        [NotMapped]
-        public SelectList listLinguaEstrangeira { get; set; }// Campo de múltiplas opções com os itens: Inglês, Espanhol e Francês.
+        //[NotMapped]
+        //public SelectList listLinguaEstrangeira { get; set; }// Campo de múltiplas opções com os itens: Inglês, Espanhol e Francês.
 
         public string linguaEstrangeira { get; set; }
         public string estado { get; set; } // Buscar o estado a partir de algum serviço web. Não utilizar a mesma busca do CEP.

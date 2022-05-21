@@ -2,6 +2,8 @@
 using DemianCRUD.Models.DAO;
 using DemianCRUD.Models.DAO.Repository;
 using DemianCRUD.Models.DAO.Repository.Interface;
+using DemianCRUD.Models.DAO.Repository.ServicoRest;
+using DemianCRUD.Models.DAO.Repository.ServicoRest.IServicoRest;
 using DemianCRUD.Models.Service;
 using DemianCRUD.Models.Service.Interface;
 using Microsoft.AspNetCore.Builder;
@@ -35,7 +37,9 @@ namespace DemianCRUD
 
             services.AddScoped<IPessoaService, PessoaService>();
             services.AddScoped<IPessoaRepository, PessoaRepository>();
+            services.AddScoped<IBrasilAPIServicoRest, BrasilAPIServicoRest>();
             services.AddControllersWithViews();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

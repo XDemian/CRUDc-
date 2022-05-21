@@ -1,6 +1,7 @@
 ﻿
 using DemianCRUD.Models.DAO;
 using DemianCRUD.Models.DAO.Repository.Interface;
+using DemianCRUD.Models.DAO.Repository.ServicoRest.IServicoRest;
 using DemianCRUD.Models.Service.Interface;
 using DemianCRUD.Models.Utils;
 using System;
@@ -14,21 +15,24 @@ namespace DemianCRUD.Models.Service
     public class PessoaService : IPessoaService
     {
         public IPessoaRepository _pessoaRepository;
+        public IBrasilAPIServicoRest _brasilAPIServicoRest;
         private string cpfValidacaoRegex;
-        public PessoaService(IPessoaRepository demianCRUDRepository)
+
+        public PessoaService(IPessoaRepository demianCRUDRepository, IBrasilAPIServicoRest brasilAPIServicoRest)
         {
             _pessoaRepository = demianCRUDRepository;
+            _brasilAPIServicoRest = brasilAPIServicoRest;
         }
 
-        public void CadastrarPessoa(Pessoa pessoa )
+        public void CadastrarPessoa(Pessoa pessoa  )
         {
             if ( pessoa.id == 0 && pessoa.nome != null  )
             {
                 //cpfValidacaoRegex = @"^[0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[\-][0-9]{2}$";
                 //var _regex = new Regex(cpfValidacaoRegex);
 
-                if(Validation.ValidarPessoa(pessoa)){
-                    _pessoaRepository.CadastrarPessoa(pessoa);
+                if(Validation.ValidarPessoa(pessoa, _brasilAPIServicoRest)){
+                    _pessoaRepository.CadastrarPessoa(pessoa );
                 }
             }
          

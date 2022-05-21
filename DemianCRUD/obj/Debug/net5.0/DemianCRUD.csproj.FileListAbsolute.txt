@@ -151,3 +151,4 @@ C:\Users\Avansys\Documents\Demian Estudo Crud C#\CRUDc-\DemianCRUD\bin\Debug\net
 C:\Users\Avansys\Documents\Demian Estudo Crud C#\CRUDc-\DemianCRUD\obj\Debug\net5.0\DemianCRUD.Views.pdb
 C:\Users\Avansys\Documents\Demian Estudo Crud C#\CRUDc-\DemianCRUD\obj\Debug\net5.0\DemianCRUD.csproj.CopyComplete
 C:\Users\Avansys\Documents\Demian Estudo Crud C#\CRUDc-\DemianCRUD\obj\Debug\net5.0\DemianCRUD.genruntimeconfig.cache
+C:\Users\Avansys\Documents\Demian Estudo Crud C#\CRUDc-\DemianCRUD\bin\Debug\net5.0\RestSharp.dll

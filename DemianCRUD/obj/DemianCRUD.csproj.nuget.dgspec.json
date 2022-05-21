@@ -59,6 +59,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[107.3.0, )"
             }
           },
           "imports": [

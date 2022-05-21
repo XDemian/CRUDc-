@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vsIyK2U7PftXTMN0blTkWhVRkGnkk6r2jjWisy3gCNW9yDDBJ9eErYB7mLl6IfD2QO5ZCTGvGSODS4ors2DNbw==",
+  "dgSpecHash": "67dY3LbeHwUqXbxNfVuYd1XTSDReSEkvGQ+k1OuwpoYm5zIOnOlmx5kyUTjaoHb74QLgrg7Di9fk7MNYplVAiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Avansys\\Documents\\Demian Estudo Crud C#\\CRUDc-\\DemianCRUD\\DemianCRUD.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\Avansys\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\Avansys\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
@@ -94,6 +95,7 @@
     "C:\\Users\\Avansys\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Avansys\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Avansys\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

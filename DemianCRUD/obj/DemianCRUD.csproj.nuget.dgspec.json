@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Avansys\\source\\repos\\DemiaCRUD\\DemianCRUD\\DemianCRUD.csproj": {}
+    "C:\\Users\\Avansys\\Documents\\Demian Estudo Crud C#\\CRUDc-\\DemianCRUD\\DemianCRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Avansys\\source\\repos\\DemiaCRUD\\DemianCRUD\\DemianCRUD.csproj": {
+    "C:\\Users\\Avansys\\Documents\\Demian Estudo Crud C#\\CRUDc-\\DemianCRUD\\DemianCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Avansys\\source\\repos\\DemiaCRUD\\DemianCRUD\\DemianCRUD.csproj",
+        "projectUniqueName": "C:\\Users\\Avansys\\Documents\\Demian Estudo Crud C#\\CRUDc-\\DemianCRUD\\DemianCRUD.csproj",
         "projectName": "DemianCRUD",
-        "projectPath": "C:\\Users\\Avansys\\source\\repos\\DemiaCRUD\\DemianCRUD\\DemianCRUD.csproj",
+        "projectPath": "C:\\Users\\Avansys\\Documents\\Demian Estudo Crud C#\\CRUDc-\\DemianCRUD\\DemianCRUD.csproj",
         "packagesPath": "C:\\Users\\Avansys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Avansys\\source\\repos\\DemiaCRUD\\DemianCRUD\\obj\\",
+        "outputPath": "C:\\Users\\Avansys\\Documents\\Demian Estudo Crud C#\\CRUDc-\\DemianCRUD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.8, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.4, )"

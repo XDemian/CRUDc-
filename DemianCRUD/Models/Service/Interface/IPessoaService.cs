@@ -11,10 +11,11 @@ namespace DemianCRUD.Models.Service.Interface
         void CadastrarPessoa(Pessoa pessoa);
         Pessoa GetPessoa();
 
-        void UpdatePessoa(Pessoa pessoa);
+        bool UpdatePessoa(Pessoa pessoa);
 
         void DeletePessoa(Pessoa pessoa);
 
         List<Pessoa> SelectAll();
+
     }
 }

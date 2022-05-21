@@ -9,15 +9,47 @@
 
 @foreach (var items in Model)
 {
- 
-
+    <h3>Lista com os Nomes </h3>
 
     <h3>Lista com os Nomes </h3>
-    @items.nome<br/>
-    @items.email<br/>
-    @items.idade<br/>
-    @items.endereco<br/>
-    @Html.Hidden("id",items.id)<br/>
-    <input type="submit" value="Editar">
+    @items.nome
+    <br />
+    @items.Cpf
+    <br />
+    @items.email
+    <br />
+    @items.telefone
+    <br />
+
+    @items.habilitacao
+    <br />
+    @items.categoria
+    <br />
+    @items.linguaEstrangeira
+    <br />
+    @items.estado
+    <br />
+
+    @items.cidade
+    <br />
+    @items.email
+    <br />
+    @items.cep
+    <br />
+    @items.logadouro
+    <br />
+    @items.numero
+    <br />
+    
+    @items.complemento
+    <br />
+    @items.cargo
+    <br />
+    @items.salarioProposto
+    <br />
+    @Html.Hidden("id", items.id)
+    <br />
+    @Html.ActionLink("Editar", "Update", "Home", items)
+
 
 }

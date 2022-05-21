@@ -13,5 +13,6 @@ namespace DemianCRUD.Models.DAO.Repository.Interface
         void UpdatePessoa(Pessoa pessoa);
 
         void DeletePessoa(Pessoa pessoa);
+        Pessoa SelectPessoaById(int Id);
     }
 }

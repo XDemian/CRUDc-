@@ -27,47 +27,79 @@
     </form>*@
 @using (Html.BeginForm())
 {
+
+
     @Html.LabelFor(model => model.nome)
     @Html.EditorFor(model => model.nome)
     <br />
-    @Html.LabelFor(model => model.idade)
-    @Html.EditorFor(model => model.idade)
+    @Html.LabelFor(model => model.Cpf)
+    @Html.EditorFor(model => model.Cpf)
     <br />
     @Html.LabelFor(model => model.email)
     @Html.EditorFor(model => model.email)
     <br />
 
-    @Html.LabelFor(model => model.endereco)
-    @Html.EditorFor(model => model.endereco)
+    @Html.LabelFor(model => model.telefone)
+    @Html.EditorFor(model => model.telefone)
     <br />
+
+    @Html.LabelFor(model => model.habilitacao)
+    @Html.EditorFor(model => model.habilitacao)
+    <br />
+    @*@if (Model != null && Model.telefone != "")*@
+
+    @if (true)
+    {
+        @Html.LabelFor(model => model.categoria)
+        @Html.EditorFor(model => model.categoria)
+        <br />
+    }
+
+    @Html.LabelFor(model => model.listLinguaEstrangeira)
+    @if (Model != null)
+        {
+            @Html.DropDownList("Testando",
+          new SelectList(Model.listLinguaEstrangeira), "Selecione Lingua", "Text")
+        }
+
+
+    <br />
+
+    @Html.LabelFor(model => model.estado)
+    @Html.EditorFor(model => model.estado)
+    <br />
+
+    @Html.LabelFor(model => model.cidade)
+    @Html.EditorFor(model => model.cidade)
+    <br />
+
+    @Html.LabelFor(model => model.cep)
+    @Html.EditorFor(model => model.cep)
+    <br />
+
+    @Html.LabelFor(model => model.logadouro)
+    @Html.EditorFor(model => model.logadouro)
+    <br />
+    @Html.LabelFor(model => model.numero)
+    @Html.EditorFor(model => model.numero)
+
+    <br />
+    @Html.LabelFor(model => model.complemento)
+    @Html.EditorFor(model => model.complemento)
+    <br />
+
+    @Html.LabelFor(model => model.cargo)
+    @Html.EditorFor(model => model.cargo)
+    <br />
+
+    @Html.LabelFor(model => model.salarioProposto)
+    @Html.EditorFor(model => model.salarioProposto)
+    <br />
+
 
     <input type="submit" value="Inserir">
 
 }
 
-
-
-@*@Html.TextBox("Aqui Vai meu Texto!")
-    <br />
-    <br />
-
-
-    @Html.Label("E-mail:")
-    <br />
-    @Html.TextBox("Aqui Vai meu Texto!")
-    <br />
-    <br />
-
-    @Html.Label("Idade:")
-    <br />
-    @Html.TextBox("Aqui Vai meu Texto!")
-    <br />
-    <br />
-
-    @Html.Label("Endereço:")
-    <br />
-    @Html.TextBox("Aqui Vai meu Texto!")
-    <br />
-    <br />*@
 
 

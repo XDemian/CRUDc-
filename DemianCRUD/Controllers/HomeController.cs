@@ -36,14 +36,24 @@ namespace DemianCRUD.Controllers
 
         public IActionResult Update(Pessoa pessoa)
         {
-           _iPessoaService.UpdatePessoa(pessoa);
-            return View(_iPessoaService.GetPessoa());
+            if (!_iPessoaService.UpdatePessoa(pessoa))
+            {
+                return View(pessoa);
+            } else return RedirectToAction("Listagem");
+
+
+
         }
 
         //[HttpPost]
         public IActionResult InsertPessoa(Pessoa pessoa)
         {
             _iPessoaService.CadastrarPessoa(pessoa);
+
+            if(pessoa.id > 0 && pessoa.nome != null)
+            {
+                return RedirectToAction("Listagem");
+            }
             return View();
         }
 

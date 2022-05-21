@@ -1,4 +1,5 @@
 ﻿using DemianCRUD.Models.DAO.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,11 @@ namespace DemianCRUD.Models.DAO.Repository
         public List<Pessoa> SelectAll()
         {
             return _demianCRUDContext.Pessoa.Where(x => x.id != 0).ToList();
+        }
+        
+        public Pessoa SelectPessoaById(int Id)
+        {
+            return _demianCRUDContext.Pessoa.Where(x => x.id == Id ).AsNoTracking().FirstOrDefault();
         }
 
         public void UpdatePessoa(Pessoa pessoa)
